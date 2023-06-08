@@ -1,5 +1,7 @@
 FROM oven/bun
 
+LABEL name="pinax-cloud-bun"
+
 WORKDIR /app
 
 ENV PUBLIC_KEY $PUBLIC_KEY

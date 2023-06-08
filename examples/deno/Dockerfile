@@ -1,5 +1,7 @@
 FROM denoland/deno:alpine
 
+LABEL name="pinax-cloud-deno"
+
 WORKDIR /app
 
 ENV PUBLIC_KEY $PUBLIC_KEY

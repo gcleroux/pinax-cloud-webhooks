@@ -1,5 +1,7 @@
 FROM node:alpine
 
+LABEL name="pinax-cloud-node"
+
 WORKDIR /app
 
 ENV PUBLIC_KEY $PUBLIC_KEY
