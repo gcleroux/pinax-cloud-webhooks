@@ -7,7 +7,6 @@ services:
       context: ./examples/bun
     ports:
       - 3000:3000
-    network_mode: host
     environment:
       - PUBLIC_KEY=${PUBLIC_KEY:-PUB_K1_5F38WK8BDCfiu3EWhb5wwrsrrat86GhVEyXp33NbDTB8DgtG4B}
       - PORT=${PORT:-3000}
@@ -17,7 +16,6 @@ services:
       context: ./examples/deno
     ports:
       - 3000:3000
-    network_mode: host
     environment:
       - PUBLIC_KEY=${PUBLIC_KEY:-PUB_K1_5F38WK8BDCfiu3EWhb5wwrsrrat86GhVEyXp33NbDTB8DgtG4B}
       - PORT=${PORT:-3000}
@@ -27,7 +25,6 @@ services:
       context: ./examples/express
     ports:
       - 3000:3000
-    network_mode: host
     environment:
       - PUBLIC_KEY=${PUBLIC_KEY:-PUB_K1_5F38WK8BDCfiu3EWhb5wwrsrrat86GhVEyXp33NbDTB8DgtG4B}
       - PORT=${PORT:-3000}
@@ -37,7 +34,6 @@ services:
       context: ./examples/node:http
     ports:
       - 3000:3000
-    network_mode: host
     environment:
       - PUBLIC_KEY=${PUBLIC_KEY:-PUB_K1_5F38WK8BDCfiu3EWhb5wwrsrrat86GhVEyXp33NbDTB8DgtG4B}
       - PORT=${PORT:-3000}
